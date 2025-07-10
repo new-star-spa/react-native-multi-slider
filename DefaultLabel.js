@@ -1,22 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { View, Text, StyleSheet } from 'react-native';
 
 const sliderRadius = 3;
 const width = 50;
 export default class DefaultLabel extends React.Component {
-  static propTypes = {
-    oneMarkerValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    twoMarkerValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-
-    oneMarkerLeftPosition: PropTypes.number,
-    twoMarkerLeftPosition: PropTypes.number,
-
-    oneMarkerPressed: PropTypes.bool,
-    twoMarkerPressed: PropTypes.bool,
-  };
-
   render() {
     const {
       oneMarkerValue,
